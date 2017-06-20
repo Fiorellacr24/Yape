@@ -1,0 +1,51 @@
+*{
+    font-family: 'Roboto' !important;
+}
+.container{
+    margin-top: 50px;
+}
+.val-number .phone{
+    width: 35%;
+}
+.val-number .form-group{
+    position: relative;
+}
+.val-number .form-group img{
+    position: absolute;
+    width: 30%;
+    bottom: 3px;
+}
+.form-control {
+    /*width: 85%;*/
+    border: none;
+    outline: 0;
+    border-bottom: 1px solid black;
+    text-align: center;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0);
+}
+.form-control:focus{
+    outline: 0;
+}
+/*.val-number .flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}*/
+.val-number .mrgn-bottom{
+    margin-bottom: 5%;
+}
+.val-number .mrgn-top{
+    margin-top: 70px;
+}
+.val-number h4{
+    line-height: 1.5;
+}
+.val-code .form-group{
+    position: relative;
+}
+.val-code .form-group img{
+    position: absolute;
+    width: 20px;
+    margin-left: 6px;
+    margin-top: 3px;
+}

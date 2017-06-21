@@ -10,9 +10,15 @@
 .form-control {
     border: none;
     outline: 0;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #8f8f8f;
     text-align: center;
     box-shadow: inset 0 1px 1px rgba(0,0,0,0);
+}
+.gray-letter{
+    color: #8f8f8f;
+}
+.turquesa-letter{
+    color: #00c3a3;
 }
 header .btn{
     padding: 6px 72px;
@@ -79,4 +85,30 @@ header .btn-warning{
 }
 .val-code .form-group .form-control{
     margin-bottom: 20px;
+}
+.val-code .cont-timer{
+    text-align: center;
+}
+.val-user{
+    margin-top: 55px;
+}
+.val-user .lock-img{
+    width: 200px;
+}
+.val-user .form-group .form-control{
+    margin-bottom: 3rem;
+}
+.val-user .form-group .form-control.code{
+    margin-bottom: 0;
+}
+.val-user .form-group .user,
+.val-user .form-group .email,
+.val-user .form-group .lock{
+    position: absolute;
+    width: 20px;
+    margin-left: 6px;
+    margin-top: 3px;
+}
+.val-user .create{
+    margin-top: 30px;
 }

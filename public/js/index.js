@@ -14,21 +14,22 @@ const render = (root) => {
 
 const state = {
     data: null,
+    id: null,
     url: Header
 };
 
 const root = $('.root');
 render(root);
 
-/*  
+
 $( _ => {
 
-    getJSON('', (err, json) => {
+    $.get('http://localhost:3000/api/', (data) => {
 
-        if (err) { return alert(err.message);}
+        //if (err) { return alert(err.message);}
 
-        state.data = json;
+        state.data = data;
+
+    });
 
 });
-
-});*/

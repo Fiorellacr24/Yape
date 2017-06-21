@@ -61,12 +61,22 @@ header .btn-warning{
 .val-number h4{
     line-height: 1.5;
 }
+.val-code{
+    margin-top: 55px;
+}
 .val-code .form-group{
     position: relative;
 }
-.val-code .form-group img{
+.val-code .form-group .lock{
     position: absolute;
     width: 20px;
     margin-left: 6px;
     margin-top: 3px;
+}
+.val-code .form-group .clock{
+    height: 14px;
+    margin-left: 3px;
+}
+.val-code .form-group .form-control{
+    margin-bottom: 20px;
 }

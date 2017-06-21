@@ -10,7 +10,7 @@ const validarNumber = () => {
     const formgroup = $('<div class="form-group"></div>');
     const imgcell = $('<img src="img/icons/phoneandnumber.png" alt="phoneandnumber">');
     const cell = ('<input type="number" class="form-control" pattern="^[0-9]{9}" id="input" maxlength="9" required="required" placeholder="- - - - - - - - -">');
-    const check = $('<input class="form-check-input" type="checkbox" id="terms"> Acepto los <a href="#">Términos y condiciones</a></label>');
+    const check = $('<input class="form-check-input" type="checkbox" id="terms"> Acepto los <a class="turquesa-letter" href="#">Términos y condiciones</a></label>');
     const btncontinue = $('<div class="form-group mrgn-top"><button type="submit" class="btn btn-warning" disabled>CONTINUAR</button></div></form>');
 
     containerval.append(image);

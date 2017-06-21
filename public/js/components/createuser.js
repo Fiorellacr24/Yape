@@ -12,7 +12,7 @@ const createUser = (update) => {
     const img_email = $('<img src="img/icons/message-gray.png" alt="email" class="email">');
     const email = $('<input type="email" class="form-control" id="email" placeholder="correo@ejemplo.com">');
     const imglocked = $('<img src="img/icons/lock.png" alt="lock" class="lock">');
-    const code = $('<input type="password" class="form-control code" id="input" maxlength="9" required="required" placeholder="Ingresa clave de 6 dígitos"><small id="pswHelp" class="form-text text-muted">Cuida esta clave como oro, es tu acceso a Yape.</small>');
+    const code = $('<input type="password" class="form-control code" id="input" maxlength="9" required="required" placeholder="Ingresa clave de 6 dígitos"><div id="pswHelp" class="form-text text-muted center">Cuida esta clave como oro, es tu acceso a Yape.</div>');
     const btnaccount = $('<button class="center-block btn btn-warning create">CREAR CUENTA</button>');
     
     container_reg.append(img_lock);

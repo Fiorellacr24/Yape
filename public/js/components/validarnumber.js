@@ -29,21 +29,21 @@ const validarNumber = () => {
 
     /*check.is(':checked')*/
     check.on('change', () =>{
-        if(cell.val().toString.length == 9 && check.is(':checked')){
-            btncontinue.removeAttr('disabled');
-        }
+        if(cell.val().toString.length == 9 && check.prop('checked', true)){
+           btncontinue.removeAttr('disabled');
+    }
         /*else{
              btncontinue.attr('disabled', 'disabled');
 }*/
-    });
+});
 
-    btncontinue.on('click', _=> {
-        /*$.post('api/registerNumber', {"phone": cell.val(), "terms": true}, (data) => {
+btncontinue.on('click', _=> {
+    /*$.post('api/registerNumber', {"phone": cell.val(), "terms": true}, (data) => {
             state.id = data.data;
             state.cell = data.data.phone;
         });*/
-        state.url = ingresoCode;
-        //alert(state.url);
-        update(); 
-    });
+    state.url = ingresoCode;
+    //alert(state.url);
+    update(); 
+});
 };

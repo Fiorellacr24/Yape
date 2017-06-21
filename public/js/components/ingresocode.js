@@ -10,7 +10,7 @@ const ingresoCode = (update) => {
     const imglock = $('<img src="img/icons/lock.png" alt="lock" class="lock">');
     const code = $('<input type="number" class="form-control code" id="input" maxlength="9" required="required" placeholder="- - - - -">');
     const cont_timer = $('<div class="gray-letter cont-timer"></div>')
-    const timer = $('<span>Reintentar en<span><img class="clock" src="img/icons/clock.png"/><span>#time</span>');
+    const timer = $('<span>Reintentar en<span><img class="clock" src="img/icons/clock.png"/><span id="timeout">21</span>');
 
     containercode.append(imgmessage);
     containercode.append(h4);
@@ -22,14 +22,19 @@ const ingresoCode = (update) => {
     containercode.append(formgroup);
     parentcode.append(containercode);
 
-    /*const app_clock = () => {
-
-    };
-
-    $(document).ready(function(){
-       app_clock();
-        setInterval(function(){app_clock();}, 60);
-    }); */  
+    
+    $(document).ready(function updateTimeOut(){
+        let seconds = $('#timeout');
+        let wait_time = 21;
+        let elapsed = 0;
+        let interval = setInterval(function(){
+            if (++elapsed > 21){ //++ primero suma luego evalúa
+                clearInterval(interval);
+            }else{
+                seconds.text(wait_time - elapsed);
+            }
+        }, 1000);
+    });
 
     code.keypress( (e) =>{
         if(e.which == 13){

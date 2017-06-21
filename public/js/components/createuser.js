@@ -12,7 +12,7 @@ const createUser = (update) => {
     const img_email = $('<img src="img/icons/message-gray.png" alt="email" class="email">');
     const email = $('<input type="email" class="form-control" id="email" placeholder="correo@ejemplo.com">');
     const imglocked = $('<img src="img/icons/lock.png" alt="lock" class="lock">');
-    const code = $('<input type="number" class="form-control code" id="input" maxlength="9" required="required" placeholder="Ingresa clave de 6 dígitos"><small id="pswHelp" class="form-text text-muted">Cuida esta clave como oro, es tu acceso a Yape.</small>');
+    const code = $('<input type="password" class="form-control code" id="input" maxlength="9" required="required" placeholder="Ingresa clave de 6 dígitos"><small id="pswHelp" class="form-text text-muted">Cuida esta clave como oro, es tu acceso a Yape.</small>');
     const btnaccount = $('<button class="center-block btn btn-warning create">CREAR CUENTA</button>');
     
     container_reg.append(img_lock);
@@ -27,6 +27,11 @@ const createUser = (update) => {
     container_reg.append(formgroup);
     container_reg.append(btnaccount);
     parentreg.append(container_reg);
+    
+    btnaccount.on('click', _ => {
+        state.url = confirmRegister;
+        update();
+    });
     
     return parentreg;
 };

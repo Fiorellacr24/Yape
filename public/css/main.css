@@ -20,6 +20,9 @@
 .turquesa-letter{
     color: #00c3a3;
 }
+.purple{
+    color: #451e36;
+}
 header .btn{
     padding: 6px 72px;
     margin-top: 20px;
@@ -84,7 +87,7 @@ header .btn-warning{
     margin-left: 3px;
 }
 .val-code .form-group .form-control{
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
 .val-code .cont-timer{
     text-align: center;
@@ -111,4 +114,22 @@ header .btn-warning{
 }
 .val-user .create{
     margin-top: 30px;
+}
+.confirm-register{
+    height: 100vh;
+    background-color: #fbd43b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.confirm-register .center{
+    text-align: center;
+}
+.confirm-register .imgcheck{
+    height: 100px;
+    margin-bottom: 10px;
+}
+.confirm-register .sizeletter{
+    font-size: 2rem;
+    font-weight: 600;
 }

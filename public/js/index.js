@@ -4,22 +4,24 @@ const render = (root) => {
     root.empty();
     const wrapper = $('<div class="wrapper"></div>');
     //Componentes
-    wrapper.append(Header());
+    //wrapper.append(Header());
     //wrapper.append(validarNumber());
     //wrapper.append(ingresoCode());
-    
+    wrapper.append(state.url(_ => render(root))); 
+
     root.append(wrapper);
+};
+
+const state = {
+    data: null,
+    url: Header
 };
 
 const root = $('.root');
 render(root);
 
-const state = {
-    data: null,
-    screen: null
-};
-
-/*$( _ => {
+/*  
+$( _ => {
 
     getJSON('', (err, json) => {
 
@@ -27,8 +29,6 @@ const state = {
 
         state.data = json;
 
-        const root = $('.root');
-        render(root);
-    });
+});
 
 });*/

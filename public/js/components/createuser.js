@@ -28,8 +28,6 @@ const createUser = (update) => {
     container_reg.append(btnaccount);
     parentreg.append(container_reg);
 
-    //btnaccount.prop('disabled', true);
-
     const validate = () => {
         if((input_user.val().length != 0) && (/[A-Za-z]+@[a-z]+\.[a-z]+/.test(email.val())) && (/^\d{6}$/.test(code.val())) ){
             btnaccount.prop('disabled', false);

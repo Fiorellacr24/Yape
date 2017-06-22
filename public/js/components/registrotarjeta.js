@@ -28,9 +28,31 @@ const registroTarj = (update) => {
     div.append(month);
     div.append(year);
     cont_venc.append(div);
-    cont_venc.append(btncontinue);
     container_regcard.append(cont_venc);
+    container_regcard.append(btncontinue);
     parentregcard.append(container_regcard);
+    
+    btncontinue.on('click', (e)=> {
+        e.preventDefault();
+        $.post('api/registerCard', {
+            phone: state.cell,
+            cardNumber: input_tarj.val(),
+            cardMonth: month.val(),
+            cardYear: year.val(),
+            cardPassword: state.code
+        }, function(results){
+            console.log(results);
+            if(results.success == false){
+                alert("Datos incorrectos");
+            }else{
+                state.card = results.data.cardNumber;
+                state.month = results.data.cardMonth;
+                state.year = results.data.cardYear;
+                state.url = confirmRegister;
+                update();;
+            }
+        });
+    });
     
     return parentregcard;
 };

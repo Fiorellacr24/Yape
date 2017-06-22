@@ -20,7 +20,9 @@ const state = {
     email: null,
     password: null,
     code: null,
-    card: null
+    card: null,
+    month: null,
+    year: null
 };
 
 $( _ => {

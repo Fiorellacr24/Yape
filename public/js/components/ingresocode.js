@@ -22,7 +22,7 @@ const ingresoCode = (update) => {
     containercode.append(formgroup);
     parentcode.append(containercode);
 
-    alert(state.code);
+    alert('Copia tu código: ' + state.code);
 
     $(document).ready(function updateTimeOut(){
         let seconds = $('#timeout');
@@ -36,20 +36,7 @@ const ingresoCode = (update) => {
             }
         }, 1000);
     });
-    
-    /*code.keypress( (e) =>{
-        if(e.which == 13){
-            if(code.value() == state.code){
-                state.url = createUser;
-                update();
-            }else{
-                alert('ño');
-            }
-        }else{
-            alert('Código incorrecto');
-        }
-    });*/
-    
+        
     code.on('keypress', _ => {
         if(code.val() == state.code){
             state.url = createUser;

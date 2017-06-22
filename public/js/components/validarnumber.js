@@ -11,7 +11,7 @@ const validarNumber = (update) => {
     const input = $('<input class="form-control" type="text" placeholder="- - - - - - - - -" title="Debe empezar con 9" pattern="[9]{1}[0-9]{8}" required>');
     const imgcell = $('<img src="img/icons/phoneandnumber.png" alt="phoneandnumber">');
     const check = $('<input class="form-check-input" type="checkbox" id="terms"> Acepto los <a class="turquesa-letter" href="#">Términos y condiciones</a>');
-    const btncontinue = $('<div class="form-group mrgn-top"><button type="submit" class="btn btn-warning" >CONTINUAR</button></div>');
+    const btncontinue = $('<div class="form-group mrgn-top center"><button type="submit" class="btn btn-warning" >CONTINUAR</button></div>');
 
     //results.data
     containerval.append(image);

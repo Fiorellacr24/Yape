@@ -136,7 +136,7 @@ header .btn-warning{
 .regcard{
     margin-top: 55px;
 }
-.regcard .cont-data-card .card-img{
+.card-img{
     width: 200px;
 }
 .regcard .cont-data-card .card{
@@ -164,4 +164,15 @@ header .btn-warning{
 .right{
     display: inline-block;
     float: right;
+}
+.card{
+    margin-top: 55px;
+}
+.card .form-group .lock{
+    position: absolute;
+    width: 20px;
+    margin-left: 6px;
+}
+.card .register{
+    margin-top: 50px;
 }

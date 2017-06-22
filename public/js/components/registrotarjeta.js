@@ -15,7 +15,7 @@ const registroTarj = (update) => {
     const div = $('<div class="right"></div>')
     const month = $('<input type="number" class="month" placeholder="Mes" min="01" max="12" required><span>/</span>');
     const year = $('<input type="number" class="year" min="17" max="24" placeholder="Año" required>');
-    const btncontinue = $('<div class="center"><button type="submit" class="btn btn-warning" >CONTINUAR</button></div>');
+    const btncontinue = $('<div class="center"><button type="submit" class="register btn btn-warning" >CONTINUAR</button></div>');
     
     container_regcard.append(img_card);
     container_regcard.append(h4);

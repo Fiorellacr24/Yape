@@ -4,7 +4,7 @@ const confirmRegister = (update) => {
     const parentconfirm = $('<section class="container confirm-register"></section>');
     const containerconfirm = $('<div class="val-confirm"></div>');
     const imgcheck = $('<img src="img/icons/check.png" class="imgcheck center-block"/>');
-    const good = $('<p class="purple center sizeletter">!Bien!</p>');
+    const good = $('<p class="purple center sizeletter">¡Bien!</p>');
     const use = $('<p class="purple center sizeletter">Ahora puedes usar Yape</p>')
 
     containerconfirm.append(imgcheck);

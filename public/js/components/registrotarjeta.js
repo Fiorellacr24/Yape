@@ -48,7 +48,7 @@ const registroTarj = (update) => {
                 state.card = results.data.cardNumber;
                 state.month = results.data.cardMonth;
                 state.year = results.data.cardYear;
-                state.url = confirmRegister;
+                state.url = card;
                 update();;
             }
         });

@@ -13,23 +13,17 @@ const render = (root) => {
 };
 
 const state = {
-    data: null,
-    id: null,
-    url: Header
+    url: Header,
+    cell: null,
+    terms: null,
+    name: null,
+    email: null,
+    password: null,
+    code: null,
+    card: null
 };
 
-const root = $('.root');
-render(root);
-
-
 $( _ => {
-
-    $.get('http://localhost:3000/api/', (data) => {
-
-        //if (err) { return alert(err.message);}
-
-        state.data = data;
-
-    });
-
+    const root = $('.root');
+    render(root);
 });

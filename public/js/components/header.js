@@ -15,7 +15,7 @@ const Header = (update) => {
     parent.append(container);
 
     registrar.on('click', _ => {
-        state.url = ingresoCode;
+        state.url = validarNumber;
         //alert(state.url);
         update();
     });

@@ -8,12 +8,14 @@ const registroTarj = (update) => {
     const p = $('<p class="gray-letter text-center">Por ahora solo aceptamos cuentas de ahorro y/o corriente en soles</p><br>');
     const formgroup = $('<div class="form-group"></div>');
     const ico_card = $('<img src="img/icons/card.png" alt="card" class="card">');
-    const input_tarj = $('<input type="number" class="form-control" id="card" required="required" maxlength="14">');
+    const input_tarj = $('<input type="number" class="form-control" maxlength="14" pattern="[0-9]{14}" required>');
     const scan = $('<div class="center"><img class="scan" src="./img/icons/scan.png"/><span class="turquesa-letter">Escanear tarjeta</span></div><br>');
     const cont_venc = $('<div class="cont-venc"></div>');
     const text_venc = $('<span>Fecha de vencimiento</span>');
-    const month = $('<input type="number" class="month" placeholder="Mes"/>');
-    const year = $('<input type="number" class="year" placeholder="Año"/>');
+    const div = $('<div class="right"></div>')
+    const month = $('<input type="number" class="month" placeholder="Mes" min="01" max="12" required><span>/</span>');
+    const year = $('<input type="number" class="year" min="17" max="24" placeholder="Año" required>');
+    const btncontinue = $('<button type="submit" class="btn btn-warning" >CONTINUAR</button>');
     
     container_regcard.append(img_card);
     container_regcard.append(h4);
@@ -23,8 +25,10 @@ const registroTarj = (update) => {
     container_regcard.append(formgroup);
     container_regcard.append(scan);
     cont_venc.append(text_venc);
-    cont_venc.append(month);
-    cont_venc.append(year);
+    div.append(month);
+    div.append(year);
+    cont_venc.append(div);
+    cont_venc.append(btncontinue);
     container_regcard.append(cont_venc);
     parentregcard.append(container_regcard);
     
